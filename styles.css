@@ -28,6 +28,36 @@ body {
     height: 100%;
     width: 20%;
     background-color: lightpink;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu > .option {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d5aa70;
+    border: none;
+    overflow: hidden;
+}
+
+.menu-slide {
+    display: none;
+    width: 100%;
+    height: 10%;
+    background-color: lightgreen;
+}
+
+.menu > .option > span {
+    font-family: "FantasyFont";
+    font-weight: bold;
+    font-size: 4rem;
+    background-image: linear-gradient(0deg, rgba(208,134,63,1) 0%, rgba(208,134,63,1) 50%, rgba(220,172,37,1) 50%, rgba(220,172,37,1) 100%);
+    color: transparent;
+    background-clip: text;
+
+    -webkit-text-stroke: .1rem black;
 }
 
 .character {
@@ -45,14 +75,32 @@ body {
 }
 
 .info {
-    background-color: lightblue
+    background-color: lightblue;
+    display: flex;
 }
 
-.slider {
+.parchment {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 3rem;
+}
+
+.menu-option {
     display: none;
-    width: 100%;
-    height: 10%;
-    background-color: lightgreen;
+}
+
+.menu-option.active {
+    display: block;
+}
+
+.menu-slide > .option {
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 @media (max-width: 992px) {
@@ -65,7 +113,8 @@ body {
         height: 90%;
     }
 
-    .slider {
-        display: block;
+    .menu-slide {
+        display: flex;
+        flex-direction: row;
     }
 }

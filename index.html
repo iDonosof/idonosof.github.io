@@ -2,23 +2,54 @@
 <html lang="es-ES">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portafolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <title>Portafolio Ignacio D.</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     </head>
     <body>
         <main class="main">
             <div class="character">
                 <img src="img/MainCharacter.png" alt="Character" />
             </div>
-            <div class="info">La info</div>
+            <div class="info">
+                <div class="parchment">
+                    <div class="menu-option active" menu-option="1">
+                        Esta es un resumen sobre mi
+                    </div>
+                    <div class="menu-option" menu-option="2">
+                        Aqui estaran mis proyectos como: 
+                        <ol>
+                            <li>Proyecto 1</li>
+                            <li>Proyecto 2</li>
+                        </ol>
+                    </div>
+                    <div class="menu-option" menu-option="3">
+                        Esta es una breve descripcion sobre mi
+                    </div>
+                    <div class="menu-option" menu-option="4">
+                        Aqui tendre los links para contactarme:
+                        <ol>
+                            <li>Email</li>
+                            <li>LinkedIn</li>
+                            <li>Github</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </main>
         <nav class="menu">
-            <div>Opcion 1</div>
-            <div>Opcion 2</div>
-            <div>Opciones 3</div>
+            <button class="option" value="1" type="button"><span>Home</span></botton>
+            <button class="option" value="2" type="button"><span>Projects</span></botton>
+            <button class="option" value="3" type="button"><span>About me</span></botton>
+            <button class="option" value="4" type="button"><span>Contact me</span></botton>
         </nav>
-        <div class="slider"></div>
+        <footer class="menu-slide">
+            <div class="option" value="1" type="button"><span>Home</span></div>
+            <div class="option" value="2" type="button"><span>Projects</span></div>
+            <div class="option" value="3" type="button"><span>About me</span></div>
+            <div class="option" value="4" type="button"><span>Contact me</span></div>
+        </footer>
         <script src="main.js"></script>
     </body>
 </html>
