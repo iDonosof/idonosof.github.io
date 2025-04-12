@@ -1,6 +1,6 @@
-// {
-//     document.querySelector("#age").innerHTML = getAge("1990-01-01");
-// }
+{
+    document.querySelector("#age").innerHTML = getAge("1998-06-17");
+}
 
 document.querySelectorAll("button.option").forEach((button) =>
     button.addEventListener("click", (e) => {
