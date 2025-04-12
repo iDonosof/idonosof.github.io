@@ -85,6 +85,11 @@ body {
     margin: 3rem;
 }
 
+.parchment > div {
+    padding: 2rem;
+    text-align: justify;
+}
+
 .menu-option {
     display: none;
 }

@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <title>Portafolio Ignacio D.</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+        <script src="js/utils.js"></script>
+
+        <script src="language/en.js"></script>
+        <script src="language/es.js"></script>
     </head>
     <body>
         <main class="main">
@@ -15,7 +19,9 @@
             <div class="info">
                 <div class="parchment">
                     <div class="menu-option active" menu-option="1">
-                        Esta es un resumen sobre mi
+                        <h4 lang="AboutMe"></h4>
+                        <p lang="MyInterests"></p>
+                        <p lang="MyHobbies"></p>
                     </div>
                     <div class="menu-option" menu-option="2">
                         Aqui estaran mis proyectos como: 
@@ -25,9 +31,6 @@
                         </ol>
                     </div>
                     <div class="menu-option" menu-option="3">
-                        Esta es una breve descripcion sobre mi
-                    </div>
-                    <div class="menu-option" menu-option="4">
                         Aqui tendre los links para contactarme:
                         <ol>
                             <li>Email</li>
@@ -39,17 +42,16 @@
             </div>
         </main>
         <nav class="menu">
-            <button class="option" value="1" type="button"><span>Home</span></botton>
-            <button class="option" value="2" type="button"><span>Projects</span></botton>
-            <button class="option" value="3" type="button"><span>About me</span></botton>
-            <button class="option" value="4" type="button"><span>Contact me</span></botton>
+            <button class="option" value="1" type="button"><span lang="Home"></span></botton>
+            <button class="option" value="2" type="button"><span lang="Projects"></span></botton>
+            <button class="option" value="3" type="button"><span lang="ContactMe"></span></botton>
         </nav>
         <footer class="menu-slide">
-            <div class="option" value="1" type="button"><span>Home</span></div>
-            <div class="option" value="2" type="button"><span>Projects</span></div>
-            <div class="option" value="3" type="button"><span>About me</span></div>
-            <div class="option" value="4" type="button"><span>Contact me</span></div>
+            <div class="option" value="1" type="button"><span lang="Home"></span></div>
+            <div class="option" value="2" type="button"><span lang="Projects"></span></div>
+            <div class="option" value="3" type="button"><span lang="ContectMe"></span></div>
         </footer>
-        <script src="main.js"></script>
+        <script src="js/language.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
