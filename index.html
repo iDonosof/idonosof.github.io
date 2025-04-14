@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Portafolio Ignacio D.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>        <title>Portafolio Ignacio D.</title>
 
         <!-- External libraries -->
 
@@ -33,7 +32,7 @@
                 <div class="carousel-inner h-100">
                     <div class="carousel-item active h-100">
                         <img
-                            class="background"
+                            class="background h-100 z-0"
                             src="img/backgrounds/BackgroundNightJapan.gif"
                             main-character="img/characters/MainCharacter.png"
                             alt="Japan night background"
@@ -41,7 +40,7 @@
                     </div>
                     <div class="carousel-item h-100">
                         <img
-                            class="background"
+                            class="background h-100 z-0"
                             src="img/backgrounds/BackgroundBeach.jpg"
                             main-character="img/characters/MainCharacterBeach.png"
                             alt="Pixel Beach background"
@@ -49,7 +48,7 @@
                     </div>
                     <div class="carousel-item h-100">
                         <img
-                            class="background fit-width"
+                            class="background w-100 h-auto"
                             src="img/backgrounds/BackgroundNightRestaurant.gif"
                             main-character="img/characters/MainCharacterSuit.png"
                             alt="Pixel restaurant at night"
@@ -57,15 +56,15 @@
                     </div>
                 </div>
             </div>
-            <div class="character-overlay position-absolute w-100 h-100">
+            <div class="character-overlay position-absolute w-50 h-100 d-flex d-column justify-content-center align-items-center top-0 left-0 z-1">
                 <img id="main-character" src="img/characters/MainCharacter.png" alt="Main character" />
             </div>
-            <div class="info-overlay position-absolute w-50">
+            <div class="info-overlay position-absolute w-50 overflow-auto top-0 end-0 bottom-0 m-4 p-5 rounded-4 z-2">
                 <h2 lang="AboutMe"></h2>
                 <p lang="MyInterests"></p>
             </div>
         </section>
-        <section class="w-100 d-flex flex-wrap flex-row gap-3 p-3" id="projects">
+        <section class="w-100 d-flex flex-wrap justify-content-center gap-3 p-3 overflow-x-auto" id="projects">
             <div class="card" style="width: 18rem">
                 <img src="img/technologies/csharp.png" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -118,11 +117,11 @@
         <section class="w-100 bg-primary-subtle" id="contact-me">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-6  contact">
+                    <div class="col-xs-12 col-md-6 contact">
                         <img src="img/icons/icon_gmail.svg" class="p-3" />
                         <h3>ignaciodonoso1998@gmail.com</h3>
                     </div>
-                    <div class="col-xs-12 col-md-6  contact">
+                    <div class="col-xs-12 col-md-6 contact">
                         <img src="img/icons/icon_linkedin.svg" class="p-3" />
                         <h3>iDonosof</h3>
                     </div>
@@ -132,7 +131,7 @@
                         <img src="img/icons/icon_github.svg" class="p-3" />
                         <h3>iDonosof</h3>
                     </div>
-                    <div class="col-xs-12 col-md-6  contact">
+                    <div class="col-xs-12 col-md-6 contact">
                         <img src="img/icons/icon_web.svg" class="p-3" />
                         <h3>iDonosof</h3>
                     </div>
