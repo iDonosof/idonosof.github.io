@@ -2,55 +2,101 @@
 <html lang="es-ES">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <title>Portafolio Ignacio D.</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
-        <script src="js/utils.js"></script>
 
+        <!-- External libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+
+        <!-- Own libraries -->
+        <script src="js/utils.js"></script>
         <script src="language/en.js"></script>
         <script src="language/es.js"></script>
+
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <main class="main">
             <div class="character">
-                <img src="img/MainCharacter.png" alt="Character" />
+                <img src="img/characters/MainCharacter.png" alt="Character" />
             </div>
             <div class="info">
-                <div class="parchment">
-                    <div class="menu-option active" menu-option="1">
-                        <h4 lang="AboutMe"></h4>
+                <div class="parchment paper">
+                    <section class="menu-option active" menu-option="0">
+                        <h3 lang="AboutMe"></h3>
                         <p lang="MyInterests"></p>
                         <p lang="MyHobbies"></p>
-                    </div>
-                    <div class="menu-option" menu-option="2">
-                        Aqui estaran mis proyectos como: 
-                        <ol>
-                            <li>Proyecto 1</li>
-                            <li>Proyecto 2</li>
-                        </ol>
-                    </div>
-                    <div class="menu-option" menu-option="3">
-                        <p lang="LinksToContactMe"></p>:
-                        <ol>
-                            <li><span lang="Email"></span> <a href="mailto:ignaciodonoso1998@gmail.com">ignaciodonoso1998@gmail.com</a></li>
-                            <li>LinkedIn</li>
-                            <li>Github</li>
-                        </ol>
-                    </div>
+                    </section>
+                    <section class="menu-option" menu-option="1">
+                        <h3 lang="Projects"></h3>
+                        <section class="splide projects-slide" aria-labelledby="carousel-heading">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="splide__slide">
+                                        <h4>Desafio Latam - Corfo</h4>
+                                        <p></p>
+                                        <div class="stack"></div>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <h4>Mapi</h4>
+                                        <p></p>
+                                        <div class="stack"></div>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <h4>Booking System | Inventory system</h4>
+                                        <p></p>
+                                        <div class="stack"></div>
+                                    </div>
+                                    <div class="splide__slide">
+                                        <h4>Veranum</h4>
+                                        <p></p>
+                                        <div class="stack"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="menu-option" menu-option="2">
+                        <h3 lang="ContactMe"></h3>
+                        <div class="contact-container">
+                            <a class="contact paper" href="mailto:ignaciodonoso1998@gmail.com" target="_blank">
+                                <img src="img/icons/icon_gmail.svg" class="contact-icon" />
+                                <span>ignaciodonoso1998@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/iDonosof" class="contact paper" target="_blank">
+                                <img src="img/icons/icon_github.svg" class="contact-icon" />
+                                <span>iDonosof</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/idonosof" class="contact paper" target="_blank">
+                                <img src="img/icons/icon_linkedin.svg" class="contact-icon" />
+                                <span href="https://www.linkedin.com/in/idonosof">idonosof</span>
+                            </a>
+                            <a href="https://idonosof.github.io/" class="contact paper" target="_blank">
+                                <img src="img/icons/icon_web.svg" class="contact-icon" />
+                                <spam href="https://idonosof.github.io/">idonosof</spam>
+                            </a>
+                        </div>
+                    </section>
                 </div>
             </div>
         </main>
         <nav class="menu">
-            <button class="option" value="1" type="button"><span lang="Home"></span></botton>
-            <button class="option" value="2" type="button"><span lang="Projects"></span></botton>
-            <button class="option" value="3" type="button"><span lang="ContactMe"></span></botton>
+            <button class="option" value="0" type="button"><span lang="Home"></span></button>
+            <button class="option" value="1" type="button"><span lang="Projects"></span></button>
+            <button class="option" value="2" type="button"><span lang="ContactMe"></span></button>
         </nav>
-        <footer class="menu-slide">
-            <div class="option" value="1" type="button"><span lang="Home"></span></div>
-            <div class="option" value="2" type="button"><span lang="Projects"></span></div>
-            <div class="option" value="3" type="button"><span lang="ContectMe"></span></div>
-        </footer>
+        <section class="menu-slide splide" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide" value="0"><span lang="Home"></span></li>
+                    <li class="splide__slide" value="1"><span lang="Projects"></span></li>
+                    <li class="splide__slide" value="2"><span lang="ContactMe"></span></li>
+                </ul>
+            </div>
+        </section>
+
         <script src="js/language.js"></script>
         <script src="js/main.js"></script>
     </body>

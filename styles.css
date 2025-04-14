@@ -1,9 +1,19 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     width: 100%;
     height: 100%;
+}
+
+/* Override PaperCSS */
+img {
+    border: none;
+}
+
+/* Override PaperCSS */
+.paper {
+    margin: 1rem;
+    padding: 1rem;
 }
 
 body {
@@ -27,11 +37,11 @@ body {
 .menu {
     height: 100%;
     width: 20%;
-    background-color: lightpink;
     display: flex;
     gap: 3rem;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .menu > .option {
@@ -46,28 +56,37 @@ body {
     display: none;
     width: 100%;
     height: 10%;
-    background-color: lightgreen;
+    overflow: hidden;
+}
+
+.splide__list {
+    width: 100%;
+}
+
+.splide * {
+    border: none;
 }
 
 .menu > .option > span {
-    font-family: "FantasyFont";
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
+    text-align: center;
     background-image: linear-gradient(0deg, rgba(208,134,63,1) 0%, rgba(208,134,63,1) 50%, rgba(220,172,37,1) 50%, rgba(220,172,37,1) 100%);
     color: transparent;
     background-clip: text;
 
-    -webkit-text-stroke: .1rem black;
+    -webkit-text-stroke: .01rem black;
 }
 
 .character {
     display: flex;
     justify-content: center;
     align-items: end;
-    background-image: url("img/BackgroundJapan.jpg");
+    background-image: url("img/backgrounds/BackgroundJapan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    
 }
 
 .character img {
@@ -75,40 +94,41 @@ body {
 }
 
 .info {
-    background-color: lightblue;
     display: flex;
 }
 
 .parchment {
-    flex: 1;
     background: rgba(255, 255, 255, 0.5);
-    margin: 3rem;
-}
-
-.parchment > div {
-    padding: 2rem;
     text-align: justify;
 }
 
 .menu-option {
     display: none;
+    flex-direction: column;
 }
 
 .menu-option.active {
-    display: block;
-}
-
-.menu-slide > .option {
-    width: 100vw;
-    height: 100%;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
 }
 
-@media (max-width: 992px) {
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-icon {
+    height: 30px;
+    margin: 0 1rem;
+}
+
+.contact {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
     .menu {
         display: none;
     }
@@ -121,5 +141,9 @@ body {
     .menu-slide {
         display: flex;
         flex-direction: row;
+    }
+
+    .contact-container {
+        gap: initial;
     }
 }
