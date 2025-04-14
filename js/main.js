@@ -1,29 +1,23 @@
-const splide = new Splide(".menu-slide.splide", {
-    type: "loop",
-})
-    .on("move", function (newIndex) {
-        const element = document.querySelector(`#splide02-slide0${newIndex + 1}`);
-        SelectOption(newIndex);
-    })
-    .mount();
+// document.querySelector("#age").innerHTML = getAge("1998-06-17");
 
-new Splide(".splide.projects-slide", {
-    type: "loop",
-}).mount();
+const backgroundCarousel = new bootstrap.Carousel("#background-carousel");
 
-document.querySelector("#age").innerHTML = getAge("1998-06-17");
+async function ChangeAnimation() {
+    const character = document.querySelector("#main-character");
+    fadeTo(character, 0, 1500);
+    await wait(1.5);
+    backgroundCarousel.next();
+    await wait(1.5);
+    const characterPath = document.querySelector(".carousel-item.active img").getAttribute("main-character");
+    character.setAttribute("src", characterPath);
+    fadeTo(character, 1, 1500);
 
-document.querySelectorAll("button.option").forEach((button) =>
-    button.addEventListener("click", (e) => {
-        const option = e.target.tagName === "SPAN" ? e.target.parentElement.getAttribute("value") : e.target.getAttribute("value");
-        SelectOption(parseInt(option));
-    })
-);
-
-function SelectOption(optionValue) {
-    document.querySelector(".menu-option.active").classList.remove("active");
-    document.querySelector(`.menu-option[menu-option="${optionValue}"]`).classList.add("active");
-    splide.go(optionValue);
-    //Update character image
-    //Update character background
 }
+
+function wait(seconds) {
+    return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+}
+
+// setInterval(() => {
+//     ChangeAnimation();
+// }, 10000);
