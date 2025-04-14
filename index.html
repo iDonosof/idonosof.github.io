@@ -32,27 +32,78 @@
             <div id="background-carousel" class="carousel slide h-100">
                 <div class="carousel-inner h-100">
                     <div class="carousel-item active h-100">
-                        <img class="background" src="img/backgrounds/BackgroundNightJapan.gif" main-character="img/characters/MainCharacter.png" alt="Japan night background" />
+                        <img
+                            class="background"
+                            src="img/backgrounds/BackgroundNightJapan.gif"
+                            main-character="img/characters/MainCharacter.png"
+                            alt="Japan night background"
+                        />
                     </div>
                     <div class="carousel-item h-100">
-                        <img class="background" src="img/backgrounds/BackgroundBeach.jpeg" main-character="img/characters/MainCharacterBeach.png" alt="Pixel Beach background" />
+                        <img
+                            class="background"
+                            src="img/backgrounds/BackgroundBeach.jpeg"
+                            main-character="img/characters/MainCharacterBeach.png"
+                            alt="Pixel Beach background"
+                        />
                     </div>
                     <div class="carousel-item h-100">
-                        <img class="background fit-width" src="img/backgrounds/BackgroundNightRestaurant.gif" main-character="img/characters/MainCharacterSuit.png" alt="Pixel restaurant at night" />
+                        <img
+                            class="background fit-width"
+                            src="img/backgrounds/BackgroundNightRestaurant.gif"
+                            main-character="img/characters/MainCharacterSuit.png"
+                            alt="Pixel restaurant at night"
+                        />
                     </div>
                 </div>
             </div>
-            <div class="character-overlay position-fixed w-100 h-100">
+            <div class="character-overlay position-absolute w-100 h-100">
                 <img id="main-character" src="img/characters/MainCharacter.png" alt="Main character" />
             </div>
-            <div class="info-overlay position-fixed w-50">
+            <div class="info-overlay position-absolute w-50">
                 <h2 lang="AboutMe"></h2>
                 <p lang="MyInterests"></p>
                 <p lang="MyHobbies"></p>
             </div>
         </section>
-        <section class="" id="projects">
-            
+        <section class="h-100 w-100" id="projects">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h4>Desafio Latam - Corfo</h4>
+                        <p></p>
+                        <div class="stack"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>Mapi</h4>
+                        <p></p>
+                        <div class="stack"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>Booking System | Inventory system</h4>
+                        <p></p>
+                        <div class="stack"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>Veranum</h4>
+                        <p></p>
+                        <div class="stack"></div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="" id="contact-me"></section>
         <script src="js/language.js"></script>
