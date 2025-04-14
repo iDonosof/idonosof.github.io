@@ -18,6 +18,6 @@ function wait(seconds) {
     return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
 }
 
-// setInterval(() => {
-//     ChangeAnimation();
-// }, 10000);
+setInterval(() => {
+    ChangeAnimation();
+}, 10000);
