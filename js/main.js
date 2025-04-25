@@ -3,21 +3,23 @@
 const backgroundCarousel = new bootstrap.Carousel("#background-carousel");
 
 async function ChangeAnimation() {
-    const character = document.querySelector("#main-character");
-    fadeTo(character, 0, 1500);
-    await wait(1.5);
-    backgroundCarousel.next();
-    await wait(1.5);
-    const characterPath = document.querySelector(".carousel-item.active img").getAttribute("main-character");
-    character.setAttribute("src", characterPath);
-    fadeTo(character, 1, 1500);
-
+  const character = getActiveCharacter();
+  document.querySelector("#background-carousel").addEventListener("slid.bs.carousel", async () => {
+    fadeIn(getNextCharacter(character), 1000);
+  }, { once: true });
+  await fadeOut(character, 1000);
+  backgroundCarousel.next();
 }
 
-function wait(seconds) {
-    return new Promise((resolve) => setTimeout(resolve, seconds * 1000));
+function getActiveCharacter() {
+  return Array.from(document.querySelectorAll(".main-character")).find(e => e.style.display !== "none");
+}
+
+function getNextCharacter(character) {
+  const index = Array.from(document.querySelectorAll(".main-character")).indexOf(character);
+  return Array.from(document.querySelectorAll(".main-character"))[index + 1] ?? document.querySelector(".main-character");
 }
 
 setInterval(() => {
-    ChangeAnimation();
+  ChangeAnimation();
 }, 10000);
