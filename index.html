@@ -1,147 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Portafolio Ignacio D.</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>Portafolio Ignacio D.</title>
 
-    <!-- External libraries -->
+        <!-- External libraries -->
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"
+        ></script>
 
-    <!-- Own libraries -->
-    <script src="js/animation.js"></script>
-    <script src="language/en.js"></script>
-    <script src="language/es.js"></script>
+        <!-- Own libraries -->
+        <script src="js/animation.js"></script>
+        <script src="language/en.js"></script>
+        <script src="language/es.js"></script>
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <section class="h-100 w-100" id="about-me">
-      <div id="background-carousel" class="carousel slide h-100">
-        <div class="carousel-inner h-100">
-          <div class="carousel-item h-100 active">
-            <img
-              class="background h-100 w-100 z-0"
-              src="img/backgrounds/BackgroundNightJapan.gif"
-              main-character="img/characters/MainCharacter.png"
-              alt="Japan night background"
-            />
-          </div>
-          <div class="carousel-item h-100">
-            <img
-              class="background h-100 w-100 z-0"
-              src="img/backgrounds/BackgroundRainStore.gif"
-              main-character="img/characters/MainCharacterBeach.png"
-              alt="Pixel Beach background"
-            />
-          </div>
-          <div class="carousel-item h-100">
-            <img
-              class="background h-100 w-100 z-0"
-              src="img/backgrounds/BackgroundRain.gif"
-              main-character="img/characters/MainCharacterSuit.png"
-              alt="Pixel restaurant at night"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="character-overlay position-absolute w-50 h-100 d-flex d-column justify-content-center align-items-center top-0 left-0 z-1">
-        <img class="main-character" src="img/characters/MainCharacter.png" alt="Main character" />
-        <img class="main-character" src="img/characters/MainCharacterBeach.png" alt="Main character on the beach" style="display: none;" />
-        <img class="main-character" src="img/characters/MainCharacterSuit.png" alt="Main character on the suit" style="display: none;" />
-      </div>
-      <div class="info-overlay position-absolute w-50 overflow-auto top-0 end-0 bottom-0 m-4 p-5 rounded-4 z-2">
-        <h2 lang="AboutMe"></h2>
-        <p lang="MyInterests"></p>
-      </div>
-    </section>
-    <section class="w-100 d-flex flex-wrap justify-content-center gap-3 p-3 overflow-x-auto" id="projects">
-      <div class="card" style="width: 18rem">
-        <img src="img/technologies/csharp.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">FrigaldajoPrev</h5>
-          <p class="card-text"></p>
-          <a href="https://github.com/iDonosof/FrigaldajoPrev" target="_blank" class="btn btn-primary">Let's check it!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="img/technologies/spring_boot.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">SpringWebService</h5>
-          <p class="card-text"></p>
-          <a href="https://github.com/iDonosof/SpringWebService" target="_blank" class="btn btn-primary">Let's check it!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="img/technologies/django.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Mapi</h5>
-          <p class="card-text"></p>
-          <a href="https://github.com/iDonosof/Mapi" target="_blank" class="btn btn-primary">Let's check it!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="img/technologies/angular.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Veranum</h5>
-          <p class="card-text"></p>
-          <a href="https://github.com/iDonosof/Veranum" target="_blank" class="btn btn-primary">Let's check it!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="img/technologies/node_js.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Desafio Latam Corfo</h5>
-          <p class="card-text"></p>
-          <a href="https://github.com/iDonosof/Desafio-Latam-Corfo" target="_blank" class="btn btn-primary">Let's check it!</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="img/technologies/react.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Inventory System - Booking System</h5>
-          <p class="card-text"></p>
-          <a href="#" class="btn btn-primary">Bro... trust me!</a>
-        </div>
-      </div>
-    </section>
-    <section class="w-100 bg-primary-subtle" id="contact-me">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 contact">
-            <img src="img/icons/icon_gmail.svg" class="p-3" />
-            <h3>ignaciodonoso1998@gmail.com</h3>
-          </div>
-          <div class="col-xs-12 col-md-6 contact">
-            <img src="img/icons/icon_linkedin.svg" class="p-3" />
-            <h3>iDonosof</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-6 contact">
-            <img src="img/icons/icon_github.svg" class="p-3" />
-            <h3>iDonosof</h3>
-          </div>
-          <div class="col-xs-12 col-md-6 contact">
-            <img src="img/icons/icon_web.svg" class="p-3" />
-            <h3>iDonosof</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="js/language.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section class="h-100 w-100" id="about-me-section">
+            <div id="background-carousel" class="carousel slide h-100">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active">
+                        <img
+                            class="background h-100 w-100 z-0"
+                            src="img/backgrounds/BackgroundNightJapan.gif"
+                            main-character="img/characters/MainCharacter.png"
+                            alt="Japan night background"
+                        />
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img
+                            class="background h-100 w-100 z-0"
+                            src="img/backgrounds/BackgroundRainStore.gif"
+                            main-character="img/characters/MainCharacterBeach.png"
+                            alt="Pixel Beach background"
+                        />
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img
+                            class="background h-100 w-100 z-0"
+                            src="img/backgrounds/BackgroundRain.gif"
+                            main-character="img/characters/MainCharacterSuit.png"
+                            alt="Pixel restaurant at night"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="character-overlay position-absolute w-50 h-100 d-flex d-column justify-content-center align-items-center top-0 left-0 z-1">
+                <img class="main-character" src="img/characters/MainCharacter.png" alt="Main character" />
+                <img class="main-character" src="img/characters/MainCharacterBeach.png" alt="Main character on the beach" style="display: none" />
+                <img class="main-character" src="img/characters/MainCharacterSuit.png" alt="Main character on the suit" style="display: none" />
+            </div>
+            <div class="info-overlay position-absolute w-50 overflow-auto top-0 end-0 bottom-0 m-4 p-5 rounded-4 z-2">
+                <h2 lang="AboutMe"></h2>
+                <p lang="MyInterests"></p>
+            </div>
+        </section>
+        <section class="w-100 p-3 mt-5 mb-5 overflow-x-auto" id="projects-section">
+            <div id="projects-carousel" class="carousel carousel-dark slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <img class="tech-stack-image" src="img/technologies/node_js.png" alt="" />
+                                    <img class="tech-stack-image" src="img/technologies/express.png" alt="" />
+                                    <img class="tech-stack-image" src="img/technologies/jenkins.png" alt="" />
+                                </div>
+                                <div class="col-sm-12 col-md-8 card p-3">
+                                    <h5>Desafio Latam</h5>
+                                    <p lang="DesafioLatamCorfo"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <img class="tech-stack-image" src="img/technologies/csharp.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/sql.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/node_js.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/angular.png" alt="" width="200px" />
+                                </div>
+                                <div class="col-sm-12 col-md-8 card p-3">
+                                    <h5>Veranum</h5>
+                                    <p>TODO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <img class="tech-stack-image" src="img/technologies/mysql.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/python.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/django.png" alt="" width="200px" />
+                                </div>
+                                <div class="col-sm-12 col-md-8 card p-3">
+                                    <h5>EcoCV</h5>
+                                    <p>TODO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <img class="tech-stack-image" src="img/technologies/python.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/django.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/mysql.png" alt="" width="200px" />
+                                </div>
+                                <div class="col-sm-12 col-md-8 card p-3">
+                                    <h5>Mapi</h5>
+                                    <p>TODO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <img class="tech-stack-image" src="img/technologies/mysql.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/spring.png" alt="" width="200px" />
+                                    <img class="tech-stack-image" src="img/technologies/csharp.png" alt="" width="200px" />
+                                </div>
+                                <div class="col-sm-12 col-md-8 card p-3">
+                                    <h5>Portafolio Duoc</h5>
+                                    <p>TODO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" style="width: 3%;" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" style="width: 3%;" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="w-100 bg-primary-subtle" id="contact-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 contact">
+                        <img src="img/icons/icon_gmail.svg" class="p-3" />
+                        <h3>ignaciodonoso1998@gmail.com</h3>
+                    </div>
+                    <div class="col-xs-12 col-md-6 contact">
+                        <img src="img/icons/icon_linkedin.svg" class="p-3" />
+                        <h3>iDonosof</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 contact">
+                        <img src="img/icons/icon_github.svg" class="p-3" />
+                        <h3>iDonosof</h3>
+                    </div>
+                    <div class="col-xs-12 col-md-6 contact">
+                        <img src="img/icons/icon_web.svg" class="p-3" />
+                        <h3>iDonosof</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/language.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
