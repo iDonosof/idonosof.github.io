@@ -3,7 +3,7 @@
 const backgroundCarousel = new bootstrap.Carousel("#background-carousel");
 let touchXAxis = 0;
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
     setInterval(() => {
         ChangeAnimation();
     }, 10000);
