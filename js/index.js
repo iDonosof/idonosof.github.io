@@ -3,6 +3,31 @@
 const backgroundCarousel = new bootstrap.Carousel("#background-carousel");
 let touchXAxis = 0;
 
+document.addEventListener("DOMContentLoaded", () => {
+    setInterval(() => {
+        ChangeAnimation();
+    }, 10000);
+});
+
+document.querySelector("#projects-section").addEventListener(
+    "touchstart",
+    (e) => {
+        touchXAxis = e.screenX;
+    },
+    false
+);
+document.querySelector("#projects-section").addEventListener(
+    "touchmove",
+    (e) => {
+        if (e.screenX < touchXAxis) {
+            new bootstrap.Carousel("#projects-carousel").next();
+        } else if (e.screenX > touchXAxis) {
+            new bootstrap.Carousel("#projects-carousel").prev();
+        }
+    },
+    false
+);
+
 async function ChangeAnimation() {
     const character = getActiveCharacter();
     document.querySelector("#background-carousel").addEventListener(
@@ -24,26 +49,3 @@ function getNextCharacter(character) {
     const index = Array.from(document.querySelectorAll(".main-character")).indexOf(character);
     return Array.from(document.querySelectorAll(".main-character"))[index + 1] ?? document.querySelector(".main-character");
 }
-
-setInterval(() => {
-    ChangeAnimation();
-}, 10000);
-
-document.querySelector("#projects-section").addEventListener(
-    "touchstart",
-    (e) => {
-        touchXAxis = e.screenX;
-    },
-    false
-);
-document.querySelector("#projects-section").addEventListener(
-    "touchmove",
-    (e) => {
-        if (e.screenX < touchXAxis) {
-            new bootstrap.Carousel("#projects-carousel").next();
-        } else if (e.screenX > touchXAxis) {
-            new bootstrap.Carousel("#projects-carousel").prev();
-        }
-    },
-    false
-);
