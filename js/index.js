@@ -1,12 +1,14 @@
 // document.querySelector("#age").innerHTML = getAge("1998-06-17");
 
+const CHANGE_ANIMATION_INTERVAL = 10000;
+const FADE_IN_DURATION = 1000;
 const backgroundCarousel = new bootstrap.Carousel("#background-carousel");
 let touchXAxis = 0;
 
 window.addEventListener("load", () => {
     setInterval(() => {
         ChangeAnimation();
-    }, 10000);
+    }, CHANGE_ANIMATION_INTERVAL);
 });
 
 document.querySelector("#projects-section").addEventListener(
@@ -33,11 +35,11 @@ async function ChangeAnimation() {
     document.querySelector("#background-carousel").addEventListener(
         "slid.bs.carousel",
         async () => {
-            fadeIn(getNextCharacter(character), 1000);
+            fadeIn(getNextCharacter(character), FADE_IN_DURATION);
         },
         { once: true }
     );
-    await fadeOut(character, 1000);
+    await fadeOut(character, FADE_IN_DURATION);
     backgroundCarousel.next();
 }
 
