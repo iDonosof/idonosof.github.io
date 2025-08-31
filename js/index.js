@@ -5,13 +5,13 @@ let touchXAxis = 0;
 
 const images = [
     {
-        name: "BackgroundNightJapan",
-        src: "img/backgrounds/BackgroundNightJapan.gif",
-    },
-    {
         name: "MainCharacter",
         src: "img/characters/MainCharacter.png",
         hideSpinner: true,
+    },
+    {
+        name: "BackgroundNightJapan",
+        src: "img/backgrounds/BackgroundNightJapan.gif",
     },
     {
         name: "BackgroundRainStore",
