@@ -6,6 +6,10 @@ body {
     height: 100%;
 }
 
+body {
+    overflow: hidden;
+}
+
 img {
     max-height: 100%;
     max-width: 100%;

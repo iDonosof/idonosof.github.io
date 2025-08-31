@@ -31,44 +31,32 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <div id="spinner" class="position-absolute bg-white w-100 h-100" style="z-index: 100">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+
         <section class="h-100 w-100" id="about-me-section">
             <div id="background-carousel" class="carousel slide h-100">
                 <div class="carousel-inner h-100">
                     <div class="carousel-item h-100 active">
-                        <img
-                            class="background h-100 w-100 z-0"
-                            src="img/backgrounds/BackgroundNightJapan.gif"
-                            main-character="img/characters/MainCharacter.png"
-                            alt="Japan night background"
-                        />
+                        <img class="background h-100 w-100 z-0" name="BackgroundNightJapan" src="" alt="Japan night background" />
                     </div>
                     <div class="carousel-item h-100">
-                        <img
-                            class="background h-100 w-100 z-0"
-                            src="img/backgrounds/BackgroundRainStore.gif"
-                            main-character="img/characters/MainCharacterBeach.png"
-                            alt="Pixel Beach background"
-                        />
+                        <img class="background h-100 w-100 z-0" name="BackgroundRainStore" src="" alt="Pixel Beach background" />
                     </div>
                     <div class="carousel-item h-100">
-                        <img
-                            class="background h-100 w-100 z-0"
-                            src="img/backgrounds/BackgroundRain.gif"
-                            main-character="img/characters/MainCharacterSuit.png"
-                            alt="Pixel restaurant at night"
-                        />
+                        <img class="background h-100 w-100 z-0" name="BackgroundRain" src="" alt="Pixel restaurant at night" />
                     </div>
                 </div>
             </div>
             <div class="character-overlay position-absolute w-50 h-100 d-flex d-column justify-content-center align-items-center top-0 left-0 z-1">
-                <img class="main-character" src="img/characters/MainCharacter.png" alt="Main character" />
-                <img
-                    class="main-character"
-                    src="img/characters/MainCharacterBeach.png"
-                    alt="Main character on the beach"
-                    style="display: none"
-                />
-                <img class="main-character" src="img/characters/MainCharacterSuit.png" alt="Main character on the suit" style="display: none" />
+                <img class="main-character" name="MainCharacter" src="" alt="Main character" />
+                <img class="main-character" name="MainCharacterBeach" src="" alt="Main character on the beach" style="display: none" />
+                <img class="main-character" name="MainCharacterSuit" src="" alt="Main character on the suit" style="display: none" />
             </div>
             <div class="info-overlay position-absolute w-50 overflow-auto top-0 end-0 bottom-0 m-4 p-5 rounded-4 z-2">
                 <h2 lang="AboutMe"></h2>
@@ -82,9 +70,9 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-4">
-                                    <img class="tech-stack-image" src="img/technologies/node_js.png" alt="Small image of node js logo" />
-                                    <img class="tech-stack-image" src="img/technologies/express.png" alt="Small image of Express logo" />
-                                    <img class="tech-stack-image" src="img/technologies/jenkins.png" alt="Small image of jenkins logo" />
+                                    <img class="tech-stack-image" src="img/technologies/node_js.png" loading="lazy" alt="Small image of node js logo" />
+                                    <img class="tech-stack-image" src="img/technologies/express.png" loading="lazy" alt="Small image of Express logo" />
+                                    <img class="tech-stack-image" src="img/technologies/jenkins.png" loading="lazy" alt="Small image of jenkins logo" />
                                 </div>
                                 <div class="col-sm-12 col-md-8 card p-3">
                                     <h5>Desafio Latam</h5>
@@ -97,10 +85,10 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-4">
-                                    <img class="tech-stack-image" src="img/technologies/csharp.png" alt="Small image of c sharp logo" />
-                                    <img class="tech-stack-image" src="img/technologies/sql.png" alt="Small image of sql logo" />
-                                    <img class="tech-stack-image" src="img/technologies/node_js.png" alt="Small image of node js logo" />
-                                    <img class="tech-stack-image" src="img/technologies/angular.png" alt="Small image of angular logo" />
+                                    <img class="tech-stack-image" src="img/technologies/csharp.png" loading="lazy" alt="Small image of c sharp logo" />
+                                    <img class="tech-stack-image" src="img/technologies/sql.png" loading="lazy" alt="Small image of sql logo" />
+                                    <img class="tech-stack-image" src="img/technologies/node_js.png" loading="lazy" alt="Small image of node js logo" />
+                                    <img class="tech-stack-image" src="img/technologies/angular.png" loading="lazy" alt="Small image of angular logo" />
                                 </div>
                                 <div class="col-sm-12 col-md-8 card p-3">
                                     <h5>Veranum</h5>
@@ -113,9 +101,9 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-4">
-                                    <img class="tech-stack-image" src="img/technologies/mysql.png" alt="Small image of mysql database logo" />
-                                    <img class="tech-stack-image" src="img/technologies/python.png" alt="Small image of python logo" />
-                                    <img class="tech-stack-image" src="img/technologies/django.png" alt="Small image of django logo" />
+                                    <img class="tech-stack-image" src="img/technologies/mysql.png" loading="lazy" alt="Small image of mysql database logo" />
+                                    <img class="tech-stack-image" src="img/technologies/python.png" loading="lazy" alt="Small image of python logo" />
+                                    <img class="tech-stack-image" src="img/technologies/django.png" loading="lazy" alt="Small image of django logo" />
                                 </div>
                                 <div class="col-sm-12 col-md-8 card p-3">
                                     <h5>EcoCV</h5>
@@ -128,9 +116,9 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-4">
-                                    <img class="tech-stack-image" src="img/technologies/python.png" alt="Small image of python logo" />
-                                    <img class="tech-stack-image" src="img/technologies/django.png" alt="Small image of django logo" />
-                                    <img class="tech-stack-image" src="img/technologies/mysql.png" alt="Small image of mysql database logo" />
+                                    <img class="tech-stack-image" src="img/technologies/python.png" loading="lazy" alt="Small image of python logo" />
+                                    <img class="tech-stack-image" src="img/technologies/django.png" loading="lazy" alt="Small image of django logo" />
+                                    <img class="tech-stack-image" src="img/technologies/mysql.png" loading="lazy" alt="Small image of mysql database logo" />
                                 </div>
                                 <div class="col-sm-12 col-md-8 card p-3">
                                     <h5>Mapi</h5>
@@ -143,9 +131,9 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-12 col-md-4">
-                                    <img class="tech-stack-image" src="img/technologies/mysql.png" alt="Small image of mysql database logo" />
-                                    <img class="tech-stack-image" src="img/technologies/spring.png" alt="Small image of spring framework logo" />
-                                    <img class="tech-stack-image" src="img/technologies/csharp.png" alt="Small image of c sharp logo" />
+                                    <img class="tech-stack-image" src="img/technologies/mysql.png" loading="lazy" alt="Small image of mysql database logo" />
+                                    <img class="tech-stack-image" src="img/technologies/spring.png" loading="lazy" alt="Small image of spring framework logo" />
+                                    <img class="tech-stack-image" src="img/technologies/csharp.png" loading="lazy" alt="Small image of c sharp logo" />
                                 </div>
                                 <div class="col-sm-12 col-md-8 card p-3">
                                     <h5>Portafolio Duoc</h5>
@@ -169,21 +157,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-6 contact">
-                        <img src="img/icons/icon_gmail.svg" class="p-3" />
+                        <img src="img/icons/icon_gmail.svg" loading="lazy" class="p-3" />
                         <h3>ignaciodonoso1998@gmail.com</h3>
                     </div>
                     <div class="col-xs-12 col-md-6 contact">
-                        <img src="img/icons/icon_linkedin.svg" class="p-3" />
+                        <img src="img/icons/icon_linkedin.svg" loading="lazy" class="p-3" />
                         <h3>iDonosof</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 contact">
-                        <img src="img/icons/icon_github.svg" class="p-3" />
+                        <img src="img/icons/icon_github.svg" loading="lazy" class="p-3" />
                         <h3>iDonosof</h3>
                     </div>
                     <div class="col-xs-12 col-md-6 contact">
-                        <img src="img/icons/icon_web.svg" class="p-3" />
+                        <img src="img/icons/icon_web.svg" loading="lazy" class="p-3" />
                         <h3>iDonosof</h3>
                     </div>
                 </div>
